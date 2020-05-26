@@ -1,0 +1,36 @@
+=> Integer to String Conversion:
+   a. String str1 = Integer.toString(a);   //Using toString()
+   b. String str3 = String.valueOf(c);     //Using String.valueOf()
+   c. String str4 = new Integer(d).toString(); //Using Integer().toString()
+   d. DecimalFormat df = new DecimalFormat("#,###");  //Using decimal Format
+      String Str5 = df.format(e);  
+
+=> String to integer conversion:
+   a. int decimalExample = Integer.parseInt("20"); // Integer.parseInt()
+   b. int inum = Integer.valueOf(str);     //Integer.valueOf()
+
+=> String to StringBuffer and StringBuilder:
+   a.StringBuffer sbr = new StringBuffer(str); 
+     StringBuilder sbl = new StringBuilder(str);
+
+=> StringBuffer, StringBuilder to String:
+   a. StringBuffer sb = new StringBuffer("beginnersbook");
+      String str = sb.toString();
+   b. StringBuilder sbdr = new StringBuilder(str);
+      String str1 = sbdr.toString(); 
+
+=> Convert number into binary number:
+   String binaryString = Integer.toBinaryString(h); 
+
+=> Convert number into octal number:
+   String octalString = Integer.toOctalString(i); 
+
+=> Convert number into hexadecimal number:
+    String hexString = Integer.toHexString(j);
+
+=> Convert number into custom based system:
+   String customString = Integer.toString(k, 7); //7-based number
+
+=> XOR of a number:  
+   *) 1^1 = 0 and 0^0= 0
+   a. (x | y) - (x & y)
