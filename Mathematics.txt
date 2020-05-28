@@ -1,0 +1,43 @@
+1. To find the count of digits in the number:
+   Approach 1: O(n) => Divide number by 10 and increase count
+   Approach 2: O(1) => N= log10(n) +1 
+        Let K be the number of digits
+   	K-1<=log10(N)<K. =>  K-1+1 <=log10(N)+1< K+1  => K<= log10(N)+1 < K+1 
+
+2. Arithmetic Progression:
+   General Formulas to solve problems related to Arithmetic Progressions: If ‘a’ is the first term and ‘d’ is the common difference:
+	nth term of an AP = a + (n-1)*d.
+	Arithmetic Mean = Sum of all terms in the AP / Number of terms in the AP.
+	Sum of ‘n’ terms of an AP = (n/2) (first term + last term) = (n/2) [ 2a + (n-1) d ].
+
+3. Geometric Progression:
+   If ‘a’ is the first term and ‘r’ is the common ratio:
+	nth term of a GP = a*r^n-1.
+	Geometric Mean = nth root of product of n terms in the GP.
+	Sum of ‘n’ terms of a GP (r < 1) = [a (1 – r^n)] / [1 – r].
+	Sum of ‘n’ terms of a GP (r > 1) = [a (r^n – 1)] / [r – 1].
+	Sum of infinite terms of a GP (r < 1) = (a) / (1 – r).
+
+   The behaviour of a geometric sequence depends on the value of the common ratio. If the common ratio is:
+	Positive, the terms will all be the same sign as the initial term.
+	Negative, the terms will alternate between positive and negative.
+	Greater than 1, there will be exponential growth towards positive or negative infinity (depending on the sign of the initial term).
+	1, the progression is a constant sequence.
+	Between -1 and 1 but not zero, there will be exponential decay towards zero.
+	-1, the progression is an alternating sequence.
+	Less than -1, for the absolute values there is exponential growth towards (unsigned) infinity, due to the alternating sign.
+
+4. Quadratic equation:
+    a*x^2 + b*x + c = 0
+    Roots: roots = (-b ± √(b2 - 4ac))/2a
+    *) If b2 < 4ac, then roots are complex (not real).
+    *) If b2 = 4ac, then roots are real and both roots are same.
+    *) If b2 > 4ac, then roots are real and different.
+
+5. LCM:
+   LCM : LCM stands for Least Common Multiple. The lowest number which is exactly divisible by each of the given numbers is called the least common multiple of those numbers. 
+   Union  or highest power of all the prime numbers
+
+6. HCF or GCD:
+   The term HCF stands for Highest Common Factor. The largest number that divides two or more numbers is the highest common factor (HCF) for those numbers.
+   Intersection or lowest power of all the prime numbers
