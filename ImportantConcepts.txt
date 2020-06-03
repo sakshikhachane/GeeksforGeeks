@@ -55,3 +55,71 @@
             list.add(new ArrayList<Integer>());
         }
 
+=> Sort the array on the basis of what you want using comparator:
+   import java.util.*;
+
+class Player {
+	String name;
+	int score;
+
+	Player(String name, int score) {
+		this.name = name;
+		this.score = score;
+	}
+}
+
+class Checker implements Comparator<Player> {
+	public int compare(Player a, Player b) {
+
+        if(a.score>b.score)
+        {
+            return -1;
+        }
+        else if(a.score<b.score)
+        {
+            return 1;
+        }
+        else
+        {
+            if((a.name).compareTo(b.name)<1)
+            {
+                return -1;
+            }
+            else
+            {
+                return 1;
+            }
+        }
+    
+    }
+}
+
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+
+        Player[] player = new Player[n];
+        Checker checker = new Checker();
+        
+        for(int i = 0; i < n; i++){
+            player[i] = new Player(scan.next(), scan.nextInt());
+        }
+        scan.close();
+
+        Arrays.sort(player, checker);
+        for(int i = 0; i < player.length; i++){
+            System.out.printf("%s %s\n", player[i].name, player[i].score);
+        }
+    }
+}
+
+
+Here Arrays.sort(array_to_be_sorted,function_implementing comparator)
+
+=> Arrays.copyOfRange():   //copy one array to another
+   public static int[] copyOfRange(int[] original, int from, int to)
+   eg.
+     int[] arr2 = Arrays.copyOfRange(arr1, 2, 6);
