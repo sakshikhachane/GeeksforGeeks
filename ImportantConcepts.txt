@@ -123,3 +123,14 @@ Here Arrays.sort(array_to_be_sorted,function_implementing comparator)
    public static int[] copyOfRange(int[] original, int from, int to)
    eg.
      int[] arr2 = Arrays.copyOfRange(arr1, 2, 6);
+
+=> In Strings mostly :
+    int alphabets[]=new int[26];  //convert into lower case using toLowerCase()
+    alphabets[a.charAt(i)-'a']--;
+
+=> StringBuffer remove character:
+   str.deleteCharAt(i);
+   str.delete(start,end);
+
+=>Compare characters using StringBuffer:
+   str.charAt(i)==str.charAt(i+1)
