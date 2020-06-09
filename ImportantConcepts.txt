@@ -134,3 +134,14 @@ Here Arrays.sort(array_to_be_sorted,function_implementing comparator)
 
 =>Compare characters using StringBuffer:
    str.charAt(i)==str.charAt(i+1)
+
+
+=>Split method in java:
+  This method don't work for java if s.split(".") is written
+  Thus write s.split("//.") for full stop
+  
+  To split string:
+  String arr[]=s.split("//.");
+  
+  *****To join array into string:
+  String str= String.join(".",arr);
