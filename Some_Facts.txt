@@ -1,0 +1,42 @@
+Time Complexity:
+1. Trees:
+	AVL tree: O(h) but it is balanced hence O(logN)
+	Traversal (inorder,postorder,preorder) - O(N)
+
+
+=>Red-Black Tree and AVL (when to used):
+  If there are less insertion and deletion and you have to search then use AVL.
+  If there are more insertion and deletion then use Red-Black tree.
+
+=> Can we use duplicates in BST?
+  Yes, BST bascially consists of distinct keys, but you can use duplicates. It is handled in two ways. Keep duplicate elements on the right handside.
+   	  12
+       /     \
+     10      20
+    /  \     /
+   9   11   12 
+      /      \
+    10       12
+
+  A Better Solution is to augment every tree node to store count together with regular fields like key, left and right pointers. 
+  It is better as height will be less and insertion and deletion will be less painful and also benefits the AVL and Red-Black Tree.
+          12(3)
+       /        \
+     10(2)      20(1)
+    /    \       
+ 9(1)   11(1)  
+
+
+=> Applications of Trees:
+   1. Store hierarchical data, like folder structure, organization structure, XML/HTML data.
+   2. Binary Search Tree is a tree that allows fast search, insert, delete on a sorted data. It also allows finding closest item
+   3. Heap is a tree data structure which is implemented using arrays and used to implement priority queues.
+   4. B-Tree and B+ Tree : They are used to implement indexing in databases.
+   5. Syntax Tree: Used in Compilers.
+   6. K-D Tree: A space partitioning tree used to organize points in K dimensional space.
+   7. Trie : Used to implement dictionaries with prefix lookup.
+   8. Suffix Tree : For quick pattern searching in a fixed text.
+   9. Spanning Trees and shortest path trees are used in routers and bridges respectively in computer networks
+   10. As a workflow for compositing digital images for visual effects.
+  
+  
