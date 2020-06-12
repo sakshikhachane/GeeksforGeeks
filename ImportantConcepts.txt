@@ -19,6 +19,34 @@
    b. StringBuilder sbdr = new StringBuilder(str);
       String str1 = sbdr.toString(); 
 
+=> Convert String to Array:
+   str[]=s.toCharArray();
+
+=> Convert array to String:
+   str[]=s.toCharArray();
+   String.ValueOf(str);
+
+=> Convert string to lowercase:
+   s[i] = Character.toLowerCase(s[i]); 
+
+=> To replace character in the String:
+   String replaceString=s1.replace('a','e');   --To replace only one character
+   String replaceString=s1.replaceAll("is","was");
+   String replaceString=s1.replaceAll("\\s","");    --To remove whitespace
+
+=> Joining the words by some character to make string:
+   String joinString1=String.join("-","welcome","to","javatpoint");  //welcome-to-javapoint
+
+=> To check if the string ends with particular character or word:
+   String s1="java by javatpoint";  
+   System.out.println(s1.endsWith("t"));      //true
+   System.out.println(s1.endsWith("point"));  //true
+
+=> To check if the character is digit of not:
+   if (Character.isDigit(s.charAt(i)) == false)  
+   
+   Same for isAlphabet()
+
 => Convert number into binary number:
    String binaryString = Integer.toBinaryString(h); 
 

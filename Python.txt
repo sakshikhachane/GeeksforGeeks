@@ -1,0 +1,22 @@
+=> Declare array of some size:
+   arr= ['']*(len(s))
+
+=> Convert array into string:
+   print(''.join(arr))
+
+=> Convert integer to character:
+   chr() is used
+
+=> Convert character to integer:
+   ord() is used ----- eg. List[ord(c) -ord('a')]= True 
+
+=> Convert string to lowercase:
+   s.lower()
+
+=> To find whether particular character exists in the string:
+    s.find(ch) --- s.find(ch)<0 : if not present
+   OR
+    if ch in s:
+
+=> To replace the character in the string:
+    string= string.replace(x, "")
