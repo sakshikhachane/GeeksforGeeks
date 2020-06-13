@@ -47,6 +47,29 @@
    
    Same for isAlphabet()
 
+=> String from characters: 
+   String(char[] char_array, int start_index, int count) – Allocates a String from a given character array but choose count characters from the start_index.
+   Example:
+   char char_arr[] = {'G', 'e', 'e', 'k', 's'};
+   String s = new String(char_arr , 1, 3); //eek
+
+=>String concat( String str): Concatenates specified string to the end of this string.
+  String s1 = ”Geeks”;
+  String s2 = ”forGeeks”;
+  String output = s1.concat(s2); // returns “GeeksforGeeks”
+
+=>int indexOf (String s): Returns the index within the string of the first occurrence of the specified string.
+  String s = ”Learn Share Learn”;
+  int output = s.indexOf(“Share”); // returns 6
+
+=>int indexOf (String s, int i): Returns the index within the string of the first occurrence of the specified string, starting at the specified index.
+  String s = ”Learn Share Learn”;
+  int output = s.indexOf("ea",3);// returns 13
+
+=>Int lastIndexOf( String s): Returns the index within the string of the last occurrence of the specified string.
+  String s = ”Learn Share Learn”;
+  int output = s.lastIndexOf("a"); // returns 14
+
 => Convert number into binary number:
    String binaryString = Integer.toBinaryString(h); 
 
