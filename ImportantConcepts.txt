@@ -29,6 +29,10 @@
 => Convert string to lowercase:
    s[i] = Character.toLowerCase(s[i]); 
 
+=> To check whether string consists of particular string or character:
+   String str = "Game of Thrones";  
+   System.out.println(str.contains("Game"));
+
 => To replace character in the String:
    String replaceString=s1.replace('a','e');   --To replace only one character
    String replaceString=s1.replaceAll("is","was");
