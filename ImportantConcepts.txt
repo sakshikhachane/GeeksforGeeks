@@ -110,6 +110,14 @@
             list.add(new ArrayList<Integer>());
         }
 
+=> Make array of arraylist:
+    ArrayList<Integer>[] al = new ArrayList[n]; 
+  
+        // initializing 
+        for (int i = 0; i < n; i++) { 
+            al[i] = new ArrayList<Integer>(); 
+        } 
+
 => Sort the array on the basis of what you want using comparator:
    import java.util.*;
 

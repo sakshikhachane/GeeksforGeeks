@@ -40,3 +40,18 @@ Time Complexity:
    10. As a workflow for compositing digital images for visual effects.
   
   
+=> Infix to Postfix:
+   Scan left to right (print operands when detected and push operator if the precedence of the operator at top is less than the incoming operator
+       else pop till the precendence of incoming operarator is greater than the top of the stack)
+
+=> Infix to prefix:
+   Way1:
+   Reverse the expression. Obtain the postfix of reversed expression. Again reverse the postfix expression obtained.
+
+=> Prefix to infix:
+   Scan expression from right to left. If operand then push it onto stack and if operator pop the two elements (top of the stack) 
+       and push (op1 operator op2) into the stack.
+
+=> Postfix to infix:
+   Scan expression left to right. If operand then push it onto stack and if operator pop the two elements (top of the stack) 
+       and push (op1 operator op2) into the stack. 
