@@ -55,3 +55,15 @@ Time Complexity:
 => Postfix to infix:
    Scan expression left to right. If operand then push it onto stack and if operator pop the two elements (top of the stack) 
        and push (op1 operator op2) into the stack. 
+
+
+=> Garbage Collector:
+   Garbage collector has function called finalize which is called before the garbage collector picks up object.
+   But it has to be some class object else it won't function.
+
+=> Inheritance:
+   1. If Derieved d=new Derieved() is called then it will first call the base class constructor then derieved class contructor.
+   2. If Base b=new Derieved() is called then it will call the overidden functions of derieved class only but if fun is a function which is static in base class then that function will only get called even if you have overridden it in derieved class
+   3. If Base b=new Derieved() is called and if function in base class is final then it can't be overidden and is a compilation error.
+   4. If Derieved d=new Derieved() is called and the function in base class is public then it must be public in the derieved class.
+   5. If Derieved d=new Derieved() is called and the function in base class is private then it can be anything in the derieved class acess specifier(public,private,protected).
