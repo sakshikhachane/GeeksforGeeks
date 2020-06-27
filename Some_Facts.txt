@@ -56,6 +56,11 @@ Time Complexity:
    Scan expression left to right. If operand then push it onto stack and if operator pop the two elements (top of the stack) 
        and push (op1 operator op2) into the stack. 
 
+=> TreeSet:
+   1. A TreeSet sorts the data in ascending order that is inserted in it.
+   2. A TreeSet does not contain any duplicate element as it is a set.
+
+
 => Constructors:
    1. Constructors cannot be enclosed in try/catch block.
 
