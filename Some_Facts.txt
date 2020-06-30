@@ -1,3 +1,5 @@
+=> Sq.root(3) = 1.73
+
 Time Complexity:
 1. Trees:
 	AVL tree: O(h) but it is balanced hence O(logN)
