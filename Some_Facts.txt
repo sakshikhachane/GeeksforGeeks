@@ -1,6 +1,16 @@
 => Sq.root(3) = 1.73
 OAOAHH || HHOAOA
 
+JAVA:
+-> Arrays:
+int arr[][] = { {2,7,9},{3,6,1},{7,4,2} };
+int cloneArray[] = intArray.clone();  //deep copy applicable only for 1-D array
+1. In Java, all objects are dynamically allocated on Heap. Thus for array of objects also the memory is given on heap.
+2. When the heap becomes full, garbage is collected. During the garbage collection objects that are no longer used are cleared, thus making space for new objects.
+
+C++:
+1. In C++, when we allocate the object using new(), the object is allocated on Heap, otherwise on Stack if not global or static.
+
 Time Complexity:
 1. Trees:
 	AVL tree: O(h) but it is balanced hence O(logN)
